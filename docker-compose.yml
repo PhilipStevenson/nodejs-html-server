@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: nodejs-html-server
+    environment:
+      APP_PORT: $APP_PORT
+    image: nodejs-html-server
+    ports:
+      - $APP_PORT:$APP_PORT
